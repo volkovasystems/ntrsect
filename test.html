@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ntrsect unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./ntrsect.deploy.js"></script>
+	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "ntrsect unit test", function( assert ) {
+
+				assert.deepEqual( ntrsect( [ 1, 2, 3, 4, 5 ], [ 6, 7, 1, 2, 3 ] ), [ 1, 2, 3 ], "should be deeply equal" );
+
+			} );
+		</script>
+	</body>
+</html>

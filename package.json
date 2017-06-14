@@ -1,6 +1,6 @@
 {
   "name": "ntrsect",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Get common elements of two lists.",
   "main": "ntrsect.js",
   "support": "ntrsect.support.js",
@@ -22,6 +22,9 @@
     "ntrsect"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/ntrsect/issues"

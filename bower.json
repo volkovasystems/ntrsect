@@ -1,11 +1,12 @@
 {
   "name": "ntrsect",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Get common elements of two lists.",
   "main": "ntrsect.deploy.js",
   "support": "ntrsect.support.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
