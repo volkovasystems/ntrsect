@@ -1,34 +1,35 @@
 {
-  "name": "ntrsect",
-  "version": "0.1.0",
-  "description": "Get common elements of two lists.",
-  "main": "ntrsect.deploy.js",
-  "support": "ntrsect.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "get",
-    "common",
-    "elements",
-    "lists",
-    "ntrsect"
-  ],
-  "homepage": "https://github.com/volkovasystems/ntrsect",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "arid": "^0.26.0",
-    "doubt": "^0.27.0",
-    "een": "^0.19.0",
-    "raze": "^0.30.0",
-    "truly": "^0.19.0"
-  }
+	"name": "ntrsect",
+	"version": "0.2.0",
+	"description": "Get common elements of two lists.",
+	"main": "ntrsect.deploy.js",
+	"support": "ntrsect.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"get",
+		"common",
+		"elements",
+		"lists",
+		"ntrsect"
+	],
+	"homepage": "https://github.com/volkovasystems/ntrsect",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"arid": "^0.30.0",
+		"doubt": "^0.34.0",
+		"een": "^0.23.0",
+		"raze": "^0.34.0",
+		"truly": "^0.20.0"
+	}
 }
