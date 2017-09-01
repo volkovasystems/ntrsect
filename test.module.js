@@ -73,17 +73,56 @@ const path = require( "path" );
 //: @server:
 describe( "ntrsect", ( ) => {
 
+	describe( "`ntrsect( [ 1, 2, 3, 4, 5 ], [ 6, 7, 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3 ]", ( ) => {
+
+			assert.deepEqual( ntrsect( [ 1, 2, 3, 4, 5 ], [ 6, 7, 1, 2, 3 ] ), [ 1, 2, 3 ] );
+
+		} );
+	} );
+
 } );
 //: @end-server
 
 //: @client:
+
 describe( "ntrsect", ( ) => {
 
+	describe( "`ntrsect( [ 1, 2, 3, 4, 5 ], [ 6, 7, 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3 ]", ( ) => {
+
+			assert.deepEqual( ntrsect( [ 1, 2, 3, 4, 5 ], [ 6, 7, 1, 2, 3 ] ), [ 1, 2, 3 ] );
+
+		} );
+	} );
+
 } );
+
+
 //: @end-client
 
 //: @bridge:
+
 describe( "ntrsect", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`ntrsect( [ 1, 2, 3, 4, 5 ], [ 6, 7, 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3 ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( ntrsect( [ 1, 2, 3, 4, 5 ], [ 6, 7, 1, 2, 3 ] ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ 1, 2, 3 ] );
+
+		} );
+	} );
+
 } );
+
 //: @end-bridge
